@@ -1,62 +1,57 @@
+/* General Styling */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background-color: #282c34; 
-    padding: 10px 20px; 
+    background-color: #282c34;
+    padding: 10px 20px;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    border-bottom: 2px solid #444;  
+    border-bottom: 2px solid #444;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
-    max-width: 1200px; 
-    margin: 0 auto;
 }
 
 .nav-links {
     list-style-type: none;
     display: flex;
-    gap: 30px; 
+    gap: 30px;
 }
 
 .nav-links li a {
     color: white;
     text-decoration: none;
     font-size: 1.1em;
-    padding: 10px 0; 
-    transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
-    color: #61dafb;  
-}
-
-.nav-links.right {
-    margin-left: auto; 
-}
-
-.logo {
-    width: 120px; 
-    height: auto;
+    padding: 10px 0;
 }
 
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 150px;  
     text-align: center;
+    margin-top: 100px;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+}
+
+.tagline {
+    font-size: 2em;
+    margin-top: 20px;
 }
 
 .button-section {
@@ -79,6 +74,7 @@ header {
     background-color: #555;
 }
 
+/* Content Section */
 .content-section {
     text-align: center;
     padding: 20px;
@@ -86,31 +82,109 @@ header {
     margin: 0 auto;
 }
 
+.content-section h2 {
+    margin-top: 40px;
+    font-size: 1.8em;
+    color: #444;
+}
+
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
+    padding: 20px;
     width: 100%;
+    margin-top: auto;
 }
+
 .install-section {
     text-align: center;
-    margin-top: 100px;
+    padding: 20px;
+    margin-top: 200px; 
+    flex-grow: 1;
 }
 
 .download-link {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 30px;
     background-color: #444;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    font-size: 1.2em;
 }
 
 .download-link:hover {
     background-color: #555;
 }
 
+/* Additional Styles for Other Sections */
+main h1 {
+    font-size: 5em;
+    color: #000;
+    margin-bottom: 20px;
+    margin-top: 120px;
+}
+
+main p {
+    font-size: 1.5em;
+    color: #000000;
+}
+
+.vs-code-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.circle {
+    width: 220px;
+    height: 220px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.vs-code-logo {
+    width: 120px;
+    height: auto;
+}
+
+/* Documentation Section */
+.documentation-section {
+    text-align: center;
+    padding: 100px 20px; 
+    margin-top: 150px; 
+}
+
+.documentation-section h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.documentation-section p {
+    font-size: 1.5em;
+    color: #777;
+}
+/* Paper Section */
+.paper-section {
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 150px;
+}
+
+.paper-section h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.paper-section p {
+    font-size: 1.5em;
+    color: #777;
+}
